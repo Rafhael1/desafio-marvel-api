@@ -15,9 +15,10 @@ import { Wrapper,
     LearnMore, 
     ContentContainer, CR } from './Results.Style';
 
-export default function Results({heroes, getAllCharacters, query, setQuery}: any) {
+export default function Results({heroes, getAllCharacters, query, setQuery, motion}: any) {
     return (
         <Wrapper >
+            <motion.div animate={{ rotate: 360 }} transition={{ duration: 0.6 }} >
                 <NavBar getAllCharacters={getAllCharacters} query={query} setQuery={setQuery} />
             {
                 !heroes.length ? <Loading /> : 
@@ -32,6 +33,7 @@ export default function Results({heroes, getAllCharacters, query, setQuery}: any
                 ))
             }
             <CR>Data provided by © Marvel 2021 MARVEL</CR>
+        </motion.div>
         </Wrapper>
     )
 }

@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 
+// Transition
+import { motion } from "framer-motion";
+
+// Style
 import { Wrapper } from './Main.Style';
 
+// Pages
 import Home from './components/containers/Home/Home';
 import Results from './components/containers/Results/Results';
 import ResultsDetails from './components/containers/Results/ResultsDetails/ResultsDetails';
@@ -53,8 +58,8 @@ function App() {
         <>
          <Switch>
             <Route exact path="/" render={() => !redirect ? <Home getAllCharacters={getAllCharacters} query={query} setQuery={setQuery} /> : <Redirect to="/results" /> }></Route>
-            <Route exact path="/results" render={() => redirect ? <Results heroes={data} getAllCharacters={getAllCharacters} query={query} setQuery={setQuery} /> : <Redirect to="/" />} ></Route>
-            <Route path="/results/:id" render={() => <ResultsDetails />} ></Route>
+            <Route exact path="/results" render={() => redirect ? <Results heroes={data} getAllCharacters={getAllCharacters} query={query} setQuery={setQuery} motion={motion}  /> : <Redirect to="/" />} ></Route>
+            <Route path="/results/:id" render={() => <ResultsDetails motion={motion} />} ></Route>
          </Switch>       
         </>
       </Router>

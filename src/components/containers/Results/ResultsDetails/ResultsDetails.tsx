@@ -14,7 +14,7 @@ import ErrorIcon from '@material-ui/icons/Error';
 // Components
 import Loading from '../../../Loading/Loading';
 
-export default function ResultsDetails() {
+export default function ResultsDetails({motion}: any) {
   
   // Credentials
   const API_KEY = process.env.REACT_APP_MARVEL_APIKEY;
@@ -46,7 +46,8 @@ export default function ResultsDetails() {
   }, [])
 
     return (
-    <Wrapper>
+      <Wrapper>
+      <motion.div animate={{ rotate: 360 }} transition={{ duration: 0.6 }} >
       <Link to="/" ><Button><ArrowBackIosRoundedIcon />Back</Button></Link>
         {
             !data.length ? <Loading /> :
@@ -70,6 +71,7 @@ export default function ResultsDetails() {
             )
         }
         <CR>Data provided by © Marvel 2021 MARVEL</CR>
+    </motion.div>
     </Wrapper>
     )
 }

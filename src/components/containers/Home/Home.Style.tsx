@@ -19,7 +19,7 @@ export const Container = styled.div`
 
 export const Logo = styled.h1`
         position: relative;
-        font-size: 70px;
+        font-size: 60px;
         font-family: 'Luckiest Guy';
         color: #ffffff;
         margin: 100px auto 20% auto;
@@ -33,9 +33,9 @@ export const Logo = styled.h1`
 export const CR = styled.p`
     text-align: center;
     font-size: 12px;
-    position: absolute;
+    position: relative;
     bottom: 1vh;
-    left: 10vh;
+    top: 25vh;
     color: white;
     text-shadow: -1px 1px 0 #000,
         0 0 3px #252525, 0 0 5px #ffffff,
