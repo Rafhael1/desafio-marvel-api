@@ -16,7 +16,6 @@ import { Wrapper,
     ContentContainer, CR } from './Results.Style';
 
 export default function Results({heroes, getAllCharacters, query, setQuery}: any) {
-    
     return (
         <Wrapper >
                 <NavBar getAllCharacters={getAllCharacters} query={query} setQuery={setQuery} />
