@@ -1,13 +1,10 @@
 # My Super Heroes
 
-![My Super Heroes](/assets/images/mysuperheroes.png)
+![MSH](src/assets/images/mysuperheroes.png)
 ## Tecnologias usadas:
 | React.js |
-------------
 | Typescript |
 | Styled-Components |
-
- 
 
 ---
 ## O app esta hospedado no netifly
