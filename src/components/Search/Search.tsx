@@ -5,9 +5,6 @@ import { Placer, SearchContainer, SearchInput, Icon } from './Search.Style'
 import thorHammer from '../../assets/svg/thor-hammer.svg'
 
 export default function Search({getAllCharacters, query, setQuery}: any) {
-
-    
-
     return (
         <>
             <Placer>
