@@ -6,6 +6,8 @@
 | Typescript |
 | Styled-Components |
 
+Também usei framer-motion para fazer as transições entre as páginas.
+
 ---
 ## O app esta hospedado no netlify
 [My Super Heroes](https://competent-kare-2af44f.netlify.app/)
